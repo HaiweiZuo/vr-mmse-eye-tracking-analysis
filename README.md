@@ -187,7 +187,7 @@ This ensures reviewers can identify the exact code version corresponding to the 
 - ✅ **P1 (Strongly recommended)**: Permutation test, repeated CV, confounding baseline
   *(Aggregated results provided in `results_public/`)*
 - ✅ **P2 (Nice-to-have)**: Feature distribution visualization
-  *(Provided in `figures/feature_separation_focused.png`)*
+  *(Individual-level visualizations available in controlled data package only; aggregated group-level Figure 3 provided in `figures/`)*
 
 ### Fixed Parameters
 
