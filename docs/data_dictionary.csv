@@ -1,0 +1,72 @@
+file,column_name,type,unit,description,missingness
+participants_master.csv,ParticipantID,string,NA,Anonymized participant identifier (format: n##/m##/ad##),None
+participants_master.csv,Group,categorical,NA,"Diagnostic group: Control, MCI, or AD",None
+participants_master.csv,Age,integer,years,Participant age at time of assessment,None
+participants_master.csv,Sex,categorical,NA,"Participant sex: M (male) or F (female)",None
+participants_master.csv,EducationYears,integer,years,Years of formal education,None
+participants_master.csv,MoCA,integer,points,Montreal Cognitive Assessment total score (0-30),None
+participants_master.csv,MMSE_paper_total,integer,points,Traditional paper-based MMSE total score (0-30),None
+participants_master.csv,VR_MMSE_total,integer,points,VR-based MMSE total score (0-21),None
+participants_master.csv,VR_MMSE_Q1,integer,points,VR-MMSE Q1 score (Orientation to Time),None
+participants_master.csv,VR_MMSE_Q2,integer,points,VR-MMSE Q2 score (Orientation to Place),None
+participants_master.csv,VR_MMSE_Q3,integer,points,VR-MMSE Q3 score (Registration),None
+participants_master.csv,VR_MMSE_Q4,integer,points,VR-MMSE Q4 score (Attention & Calculation),None
+participants_master.csv,VR_MMSE_Q5,integer,points,VR-MMSE Q5 score (Recall),None
+participants_master.csv,Excluded,boolean,NA,Whether participant was excluded from analysis,None
+participants_master.csv,ExclusionReason,string,NA,Reason for exclusion (empty if not excluded),None
+participant_task_level_metrics.csv,ParticipantID,string,NA,Anonymized participant identifier,None
+participant_task_level_metrics.csv,Group,categorical,NA,"Diagnostic group: Control, MCI, or AD",None
+participant_task_level_metrics.csv,Task,categorical,NA,"VR-MMSE task: Q1, Q2, Q3, Q4, or Q5",None
+participant_task_level_metrics.csv,Mean_Amplitude_deg,float,degrees,Mean saccade amplitude for this participant in this task,None
+participant_task_level_metrics.csv,SEM_Amplitude_deg,float,degrees,Standard error of mean for saccade amplitude,None
+CTRL_All_Folders_ROI_Summary.csv,ParticipantID,string,NA,Short participant ID (e.g. n1 instead of n01),None
+CTRL_All_Folders_ROI_Summary.csv,Group,categorical,NA,Always 'Control' for this file,None
+CTRL_All_Folders_ROI_Summary.csv,Task,categorical,NA,"VR-MMSE task: Q1, Q2, Q3, Q4, or Q5",None
+CTRL_All_Folders_ROI_Summary.csv,ROI,string,NA,Region of Interest identifier (e.g. KW_n2q1_1),None
+CTRL_All_Folders_ROI_Summary.csv,ROI_type,categorical,NA,"ROI type: KW (keyword), INST (instruction), or BG (background)",None
+CTRL_All_Folders_ROI_Summary.csv,FixTime,float,seconds,Total fixation time within this ROI,None
+CTRL_All_Folders_ROI_Summary.csv,EnterCount,integer,count,Number of times gaze entered this ROI,None
+CTRL_All_Folders_ROI_Summary.csv,RegressionCount,integer,count,Number of regressions (re-entries) to this ROI,None
+MCI_All_Folders_ROI_Summary.csv,ParticipantID,string,NA,Short participant ID (e.g. m1 instead of m01),None
+MCI_All_Folders_ROI_Summary.csv,Group,categorical,NA,Always 'MCI' for this file,None
+MCI_All_Folders_ROI_Summary.csv,Task,categorical,NA,"VR-MMSE task: Q1, Q2, Q3, Q4, or Q5",None
+MCI_All_Folders_ROI_Summary.csv,ROI,string,NA,Region of Interest identifier,None
+MCI_All_Folders_ROI_Summary.csv,ROI_type,categorical,NA,"ROI type: KW, INST, or BG",None
+MCI_All_Folders_ROI_Summary.csv,FixTime,float,seconds,Total fixation time within this ROI,None
+MCI_All_Folders_ROI_Summary.csv,EnterCount,integer,count,Number of times gaze entered this ROI,None
+MCI_All_Folders_ROI_Summary.csv,RegressionCount,integer,count,Number of regressions to this ROI,None
+AD_All_Folders_ROI_Summary.csv,ParticipantID,string,NA,Short participant ID (e.g. a1 or ad1),None
+AD_All_Folders_ROI_Summary.csv,Group,categorical,NA,Always 'AD' for this file,None
+AD_All_Folders_ROI_Summary.csv,Task,categorical,NA,"VR-MMSE task: Q1, Q2, Q3, Q4, or Q5",None
+AD_All_Folders_ROI_Summary.csv,ROI,string,NA,Region of Interest identifier,None
+AD_All_Folders_ROI_Summary.csv,ROI_type,categorical,NA,"ROI type: KW, INST, or BG",None
+AD_All_Folders_ROI_Summary.csv,FixTime,float,seconds,Total fixation time within this ROI,None
+AD_All_Folders_ROI_Summary.csv,EnterCount,integer,count,Number of times gaze entered this ROI,None
+AD_All_Folders_ROI_Summary.csv,RegressionCount,integer,count,Number of regressions to this ROI,None
+CTRL_All_Folders_Events.csv,ParticipantID,string,NA,Short participant ID,None
+CTRL_All_Folders_Events.csv,Group,categorical,NA,Always 'Control' for this file,None
+CTRL_All_Folders_Events.csv,Task,categorical,NA,"VR-MMSE task: Q1, Q2, Q3, Q4, or Q5",None
+CTRL_All_Folders_Events.csv,EventType,categorical,NA,"Event type: fixation or saccade",None
+CTRL_All_Folders_Events.csv,Duration_ms,float,milliseconds,Duration of the event (mainly for fixations),Some
+CTRL_All_Folders_Events.csv,Amplitude_deg,float,degrees,Saccade amplitude in degrees (for saccades only),Some
+CTRL_All_Folders_Events.csv,MaxVel,float,deg/s,Maximum velocity (for saccades),Some
+CTRL_All_Folders_Events.csv,MeanVel,float,deg/s,Mean velocity (for saccades),Some
+CTRL_All_Folders_Events.csv,ROI,string,NA,ROI where event occurred (mainly for fixations),Some
+MCI_All_Folders_Events.csv,ParticipantID,string,NA,Short participant ID,None
+MCI_All_Folders_Events.csv,Group,categorical,NA,Always 'MCI' for this file,None
+MCI_All_Folders_Events.csv,Task,categorical,NA,"VR-MMSE task: Q1, Q2, Q3, Q4, or Q5",None
+MCI_All_Folders_Events.csv,EventType,categorical,NA,"Event type: fixation or saccade",None
+MCI_All_Folders_Events.csv,Duration_ms,float,milliseconds,Duration of the event,Some
+MCI_All_Folders_Events.csv,Amplitude_deg,float,degrees,Saccade amplitude in degrees,Some
+MCI_All_Folders_Events.csv,MaxVel,float,deg/s,Maximum velocity,Some
+MCI_All_Folders_Events.csv,MeanVel,float,deg/s,Mean velocity,Some
+MCI_All_Folders_Events.csv,ROI,string,NA,ROI where event occurred,Some
+AD_All_Folders_Events.csv,ParticipantID,string,NA,Short participant ID,None
+AD_All_Folders_Events.csv,Group,categorical,NA,Always 'AD' for this file,None
+AD_All_Folders_Events.csv,Task,categorical,NA,"VR-MMSE task: Q1, Q2, Q3, Q4, or Q5",None
+AD_All_Folders_Events.csv,EventType,categorical,NA,"Event type: fixation or saccade",None
+AD_All_Folders_Events.csv,Duration_ms,float,milliseconds,Duration of the event,Some
+AD_All_Folders_Events.csv,Amplitude_deg,float,degrees,Saccade amplitude in degrees,Some
+AD_All_Folders_Events.csv,MaxVel,float,deg/s,Maximum velocity,Some
+AD_All_Folders_Events.csv,MeanVel,float,deg/s,Mean velocity,Some
+AD_All_Folders_Events.csv,ROI,string,NA,ROI where event occurred,Some

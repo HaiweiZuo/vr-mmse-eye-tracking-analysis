@@ -1,0 +1,80 @@
+================================================================================
+MCI vs Controls - Enhanced Cross-Validated ROC Analysis Report
+================================================================================
+
+Analysis Date: 2026-01-19
+Method: 10-Fold Stratified Cross-Validation
+Standardization: Leakage-safe (within-fold, training-only fit)
+Random Seed: 42
+
+Sample Size:
+  Control: 20 participants
+  MCI: 20 participants
+  Total: 40 participants
+
+Features Used:
+  1. VR_MMSE_total
+  2. Mean_FixTime
+  3. Mean_EnterCount
+  4. Mean_RegressionCount
+  5. Mean_Saccade_Amplitude
+
+Cross-Validation Results:
+  Cross-validated AUC: 1.0000
+  95% CI (Bootstrap): [1.00–1.00]
+  Mean Fold AUC: 1.0000 ± 0.0000
+
+Fold-by-Fold AUCs:
+  Fold  1: 1.0000
+  Fold  2: 1.0000
+  Fold  3: 1.0000
+  Fold  4: 1.0000
+  Fold  5: 1.0000
+  Fold  6: 1.0000
+  Fold  7: 1.0000
+  Fold  8: 1.0000
+  Fold  9: 1.0000
+  Fold 10: 1.0000
+
+Optimal Classification Threshold (Youden Index):
+  Threshold: 0.7011
+  Sensitivity: 1.0000 (100.0%)
+  Sensitivity 95% CI (Clopper-Pearson): [0.832–1.000]
+  Specificity: 1.0000 (100.0%)
+  Specificity 95% CI (Clopper-Pearson): [0.832–1.000]
+  Youden Index: 1.0000
+
+Confusion Matrix:
+  True Positives (TP): 20 / 20
+  True Negatives (TN): 20 / 20
+  False Positives (FP): 0
+  False Negatives (FN): 0
+
+================================================================================
+For DADM Manuscript (Copy-Paste Values)
+================================================================================
+
+AUC: 1.00 (95% CI: 1.00–1.00)
+Sensitivity: 100.0% (95% CI: 83.2%–100.0%)
+Specificity: 100.0% (95% CI: 83.2%–100.0%)
+
+DADM-Style Reporting (recommended by expert):
+"In this internally validated cohort, participant-level ROI entry and
+regression measures showed non-overlapping ranges between MCI and controls,
+yielding leakage-safe 10-fold cross-validated discrimination of AUC=1.00
+(95% CI 1.00–1.00), with sensitivity of 100.0%
+(95% CI 83.2%–100.0%) and specificity of 100.0%
+(95% CI 83.2%–100.0%). Given the modest sample size
+and clinically well-characterized recruitment, these estimates represent
+internal validation and may overestimate real-world performance; external
+validation in larger, more heterogeneous cohorts is required."
+
+P0 Artifacts:
+  ✓ metrics.json (included in this Open package)
+  ✓ software_versions.txt (included in this Open package)
+  ✓ oof_predictions.csv (available in Controlled-access package via Curtin RDC)
+  ✓ cv_folds_seed_and_indices.csv (available in Controlled-access package via Curtin RDC)
+
+Note: Per ethics requirements, participant-level predictions and fold assignments
+are available only via controlled access (Curtin Research Data Collection).
+

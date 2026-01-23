@@ -1,0 +1,100 @@
+{
+  "analysis_date": "2026-01-19",
+  "models": [
+    {
+      "model_name": "Baseline (Demographics Only)",
+      "features": [
+        "Age",
+        "Sex_binary",
+        "EducationYears"
+      ],
+      "n_features": 3,
+      "cv_auc": 0.435,
+      "mean_fold_auc": 0.475,
+      "std_fold_auc": 0.2839454172900137,
+      "fold_aucs": [
+        0.5,
+        0.75,
+        0.75,
+        0.0,
+        0.75,
+        0.5,
+        0.0,
+        0.25,
+        0.75,
+        0.5
+      ],
+      "sensitivity": 0.8,
+      "specificity": 0.30000000000000004,
+      "description": "Only demographic/confounding variables"
+    },
+    {
+      "model_name": "Full Model (VR-MMSE + Eye-Tracking)",
+      "features": [
+        "VR_MMSE_total",
+        "Mean_FixTime",
+        "Mean_EnterCount",
+        "Mean_RegressionCount",
+        "Mean_Saccade_Amplitude"
+      ],
+      "n_features": 5,
+      "cv_auc": 1.0,
+      "mean_fold_auc": 1.0,
+      "std_fold_auc": 0.0,
+      "fold_aucs": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "description": "VR-MMSE and eye-tracking features (manuscript model)"
+    },
+    {
+      "model_name": "Adjusted Model (Full + Demographics)",
+      "features": [
+        "VR_MMSE_total",
+        "Mean_FixTime",
+        "Mean_EnterCount",
+        "Mean_RegressionCount",
+        "Mean_Saccade_Amplitude",
+        "Age",
+        "Sex_binary",
+        "EducationYears"
+      ],
+      "n_features": 8,
+      "cv_auc": 1.0,
+      "mean_fold_auc": 1.0,
+      "std_fold_auc": 0.0,
+      "fold_aucs": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "description": "Full model adjusted for demographics"
+    }
+  ],
+  "comparison": {
+    "baseline_auc": 0.435,
+    "full_auc": 1.0,
+    "adjusted_auc": 1.0,
+    "delta_full_vs_baseline": 0.565,
+    "delta_adjusted_vs_full": 0.0
+  }
+}

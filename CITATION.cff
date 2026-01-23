@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+type: dataset
+title: "VR-CS + Eye-Tracking Dataset for Alzheimer's Disease and MCI Detection"
+version: 2.0
+date-released: 2026-01-23
+abstract: "This Open Access package provides analysis code, ROI dictionaries, and aggregated summary outputs from a VR-based cognitive screening tool (VR-CS) study with eye-tracking (N=60: 20 healthy controls, 20 MCI, 20 AD). It includes reproducible scripts for cross-validated ROC analysis, permutation tests, and feature visualization. Participant-level derived datasets are intended to be provided via controlled access through Curtin Research Data Collection (institutional data repository record in preparation) upon ethics approval and data sharing agreement."
+keywords:
+  - Virtual Reality
+  - Eye-tracking
+  - Alzheimer's Disease
+  - Mild Cognitive Impairment
+  - Cognitive Screening
+  - Digital Biomarkers
+  - Saccade Amplitude
+  - ROC Analysis
+  - Machine Learning
+  - Cross-Validation
+  - Reproducible Research
+license: CC-BY-4.0
+repository-code: "https://github.com/HaiweiZuo/vr-cs-eye-tracking-analysis"
+authors:
+  - family-names: "Zuo"
+    given-names: "Haiwei"
+    orcid: "https://orcid.org/0009-0009-7008-3028"
+    affiliation: "Curtin Malaysia Research Institute, Curtin University Malaysia"
+contact:
+  - email: "haiwei.zuo@postgrad.curtin.edu.my"
+    name: "Haiwei Zuo"
