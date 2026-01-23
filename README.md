@@ -180,15 +180,6 @@ See [docs/ROI_Dictionary.txt](docs/ROI_Dictionary.txt) and [docs/roi_mapping_rul
 
 This ensures reviewers can identify the exact code version corresponding to the manuscript.
 
-### DADM Standards Compliance
-
-- ✅ **P0 (Mandatory)**: Out-of-fold predictions, fold indices, metrics, software versions
-  *(Available in controlled data package)*
-- ✅ **P1 (Strongly recommended)**: Permutation test, repeated CV, confounding baseline
-  *(Aggregated results provided in `results_public/`)*
-- ✅ **P2 (Nice-to-have)**: Feature distribution visualization
-  *(Individual-level visualizations available in controlled data package only; aggregated group-level Figure 3 provided in `figures/`)*
-
 ### Fixed Parameters
 
 - **Random seed**: 42 (for reproducible cross-validation splits)
